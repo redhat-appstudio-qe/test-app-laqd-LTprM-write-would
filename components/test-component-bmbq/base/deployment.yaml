@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: test-component-bmbq
     spec:
       containers:
-      - image: quay.io/redhat-appstudio-qe/test-images:5ab4541ee2564a7f83d4bf5a6a6af395
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:b35de39198b41987a535476aa506173b9121dafaa3f2b87213685eda65c9fddc
         name: my-python
         ports:
         - containerPort: 8081

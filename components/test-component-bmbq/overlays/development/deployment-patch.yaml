@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-bmbq
+  namespace: build-e2e-pkrd-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:b35de39198b41987a535476aa506173b9121dafaa3f2b87213685eda65c9fddc
+        name: my-python
+        resources: {}
+status: {}
